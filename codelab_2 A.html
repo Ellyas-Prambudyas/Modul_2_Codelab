@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan dengan JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Penjumlahan dengan JavaScript</h1>
+    <div>
+        <input type="number" id="num1" placeholder="Masukkan angka pertama">
+        <input type="number" id="num2" placeholder="Masukkan angka kedua">
+        <button onclick="tambah()">Jumlahkan</button>
+    </div>
+    <h2>Hasil: <span id="hasil"></span></h2>
+
+    <script>
+        function tambah() {
+            // Ambil nilai dari input
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            
+            // Lakukan penjumlahan
+            var hasil = num1 + num2;
+
+            // Tampilkan hasil ke pengguna
+            document.getElementById('hasil').innerText = hasil;
+        }
+    </script>
+</body>
+</html>
